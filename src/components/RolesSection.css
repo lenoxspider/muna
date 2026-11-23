@@ -1,0 +1,73 @@
+/* Dual Roles Section */
+.roles-section {
+  padding: 80px 0;
+  background: var(--field2);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.role-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+}
+
+.role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.role-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.role-desc {
+  font-size: 15px;
+  color: var(--ink2);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.role-features {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.role-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.role-feature-item svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .roles-grid {
+    grid-template-columns: 1fr;
+  }
+}
